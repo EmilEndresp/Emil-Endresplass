@@ -7,9 +7,9 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa;
+    line-height: 1.5;
     color: #333;
+    background-color: #f8f9fc;
     padding: 20px;
 }
 
@@ -18,71 +18,90 @@ body {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
-    background: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
 /* Sidebar */
 .sidebar {
-    background-color: #293241;
+    width: 30%;
+    background-color: #3f51b5;
     color: #fff;
     padding: 20px;
-    width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 20px;
 }
 
-.sidebar h1, .sidebar h2 {
-    margin-bottom: 15px;
+.sidebar h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    color: #d1c4e9;
+}
+
+.sidebar a {
+    color: #ffd54f;
+    text-decoration: none;
 }
 
 .sidebar ul {
     list-style: none;
-    margin: 20px 0;
-    padding: 0;
 }
 
 .sidebar ul li {
     margin-bottom: 10px;
 }
 
-.sidebar a {
-    color: #61dafb;
-    text-decoration: none;
-}
-
 /* Main Content */
-.content {
-    padding: 20px;
+.main-content {
     width: 70%;
+    padding: 20px;
 }
 
-.content h3 {
+.main-content h3 {
+    font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #293241;
+    color: #3f51b5;
     border-bottom: 2px solid #eee;
     padding-bottom: 5px;
 }
 
 .job, .school {
+    margin-bottom: 20px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.job-header span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.skill-category {
     margin-bottom: 15px;
 }
 
-.job h4, .school h4 {
-    color: #3d5a80;
+.skill-category ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-.skill-category h4 {
-    font-size: 1.2em;
+.skill-category li {
+    background-color: #e8eaf6;
+    color: #333;
+    padding: 5px 10px;
     margin-bottom: 5px;
-    color: #3d5a80;
-}
-
-.skill-category p {
-    margin-bottom: 10px;
-    font-size: 0.9em;
-    color: #555;
+    border-radius: 4px;
+    display: inline-block;
 }
